@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <center>
+    <h1><%= @doughnut.name %></h1>
+    <img src="<%= @doughnut.image %>" class="img-responsive">
+  </center>
+  <h3>Description: <%= @doughnut.description %></h3>
+  <h3>Dough: <%= @doughnut.dough %></h3>
+  <h3>Diet: <%= @doughnut.diet %></h3>
+  <h3>Cost: $<%= @doughnut.cost %></h3>
+</div>
+
+<%= link_to 'Edit', edit_doughnut_path(@doughnut) %> |
+<%= link_to 'Back', doughnuts_path %>
